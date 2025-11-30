@@ -1,46 +1,4 @@
 @use "reset";
-
-* {
-    font-family: inherit;
-}
-
-html {
-    font-family: "Roboto", sans-serif;
-    font-size: 10px;
-}
-
-header {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-
-    background: url("../assets/img/bg_header_small.webp") center/cover fixed;
-
-    @media screen and (min-width: 768px) {
-        background-image: url("../assets/img/bg_header_medium.webp");
-    }
-
-    @media screen and (min-width: 1024px) {
-        background-image: url("../assets/img/bg_header_big.webp");
-    }
-
-    h1 {
-        color: #000;
-        font-size: 3.6rem;
-        @media screen and (min-width: 768px) {
-            font-size: 5rem;
-        }
-    
-        @media screen and (min-width: 1024px) {
-            font-size: 7rem;
-        }
-        text-align: center;
-        padding: 1rem;
-        line-height: 3ex;
-    }
-}
-
-main {
-    height: 200vh;
-}
+@use "base";
+@use "header";
+@use "main";
