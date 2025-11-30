@@ -7,8 +7,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: v.$head-big-text-color;   
+    color: v.$color-head-big-text;   
     background: url("../assets/img/bg_header_small.webp") center/cover fixed;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.363);
+        position: absolute;
+    }
 
     @include media-queries {
         background-image: url("../assets/img/bg_header_medium.webp");
@@ -20,8 +29,9 @@
 }
 
 .head-big-text {
+    z-index: 1;
     flex-basis: 23%;
-    color: v.$head-big-text-color;
+    color: v.$color-head-big-text;
     font-size: 3.6rem;
     text-align: center;
     padding: 1rem;
@@ -37,5 +47,17 @@
 }
 
 .btn-header-main {
-    background-color: v.$btn-header-main-color;
+    z-index: 1;
+    width: 120px;
+    background-color: v.$color-btn-header-main;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    text-align: center;
+    transition: .5s;
+}
+
+.btn-header-main:hover, .btn-header-main:focus {
+    transform: translateY(-10px);
+    background-color: v.$color-btn-header-main-hover;
 }
