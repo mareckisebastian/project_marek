@@ -70,7 +70,7 @@ a {
 .nav {
   display: flex;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   position: fixed;
   width: 100%;
   height: 7rem;
@@ -86,28 +86,44 @@ a {
     display: none;
   }
 }
-.nav ul {
+.nav .lista_menu {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .nav ul {
+  .nav .lista_menu {
     display: block;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 
 .logo {
-  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-basis: 40%;
   padding-left: 2%;
 }
-.logo .logo_firmy {
+
+.link_firmy {
+  display: block;
+  height: 100%;
+}
+
+.logo_firmy {
+  display: flex;
   height: 7rem;
 }
-.logo .nazwa_firmy {
-  font-size: 2rem;
+
+.nazwa_firmy {
+  display: flex;
+  color: #0D0000;
+  font-size: 2.3rem;
+  text-transform: uppercase;
 }
 
 .menu {
-  flex-basis: 50%;
+  flex-basis: 60%;
   padding-right: 2%;
   text-align: right;
 }
@@ -156,7 +172,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .head-big-text {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 }
 @media screen and (min-width: 2048px) {
