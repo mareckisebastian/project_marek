@@ -9,9 +9,9 @@
     align-items: center;
     color: v.$color-head-big-text;   
     background-image: url("../assets/img/bg_header_small.webp");
-    background-size: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
 
     &::after {
