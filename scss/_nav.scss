@@ -1,0 +1,24 @@
+@use "variables" as v;
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 1.8rem;
+    color: v.$color-head-big-text;
+    background-color: v.$color-nav-bg;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo {
+    flex-basis: 50%;
+    padding-left: 1%;
+}
+
+.menu {
+    flex-basis: 50%;
+    padding-right: 1%;
+    text-align: right;
+}
