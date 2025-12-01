@@ -23,7 +23,7 @@
         background-image: url("../assets/img/bg_header_medium.webp");
     }
 
-    @include media-queries (1024px) {
+    @include media-queries ("l") {
         background-image: url("../assets/img/bg_header_big.webp");
     }
 }
@@ -41,9 +41,13 @@
         font-size: 5rem;
     }
     
-    @include media-queries (1024px) {
+    @include media-queries ("l") {
         font-size: 7rem;
-    }   
+    }  
+    
+    @include media-queries ("xl") {
+        font-size: 9rem;
+    }
 }
 
 .btn-header-main {

@@ -1,4 +1,20 @@
-@mixin media-queries($mw: 768px) {
+//punkty przełamania dla poszczególnych ekranów
+$bp-m: 768px;
+$bp-l: 1024px;
+$bp-xl: 2048px;
+
+
+@mixin media-queries($mw: "m") {
+
+    @if $mw == "m" {
+        $mw: $bp-m;
+    } @else if $mw == "l" {
+        $mw: $bp-l;
+    } @else if $mw == "xl" {
+        $mw: $bp-xl;
+    } @else {
+        $mw: $mw;
+    }
 
     @media screen and (min-width: $mw) {
         
