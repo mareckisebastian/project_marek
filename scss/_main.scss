@@ -1,3 +1,15 @@
-  main {
-    height: 200vh;
+@use "variables" as v;
+
+section {
+  min-height: 100vh;
+  padding-top: 4rem;
+
+  &:nth-of-type(even) {
+    background-color: v.$color-bg-main-section;
+  }
+
+  h2 {
+    font-size: 3.4rem;
+    text-align: center;
+  }
 }
