@@ -217,19 +217,7 @@ section h2 {
   text-align: center;
 }
 
-.whatsapp a {
-  color: #25D366;
-}
-.whatsapp a:hover {
-  text-decoration: underline;
-}
-.whatsapp .whatsapp-icon {
-  fill: #25D366;
-  width: 20px;
-  height: 20px;
-}
-
-.btn-contact-call {
+.btn-contact-call, .btn-contact-WhatsApp {
   display: flex;
   z-index: 1;
   width: 120px;
@@ -242,7 +230,7 @@ section h2 {
   transition: 0.5s;
 }
 
-.btn-contact-call:hover, .btn-contact-call:focus {
+.btn-contact-call:hover, .btn-contact-call:focus, .btn-contact-WhatsApp:hover, .btn-contact-WhatsApp:focus {
   transform: translateY(-10px);
   background-color: #BFB3A4;
 }

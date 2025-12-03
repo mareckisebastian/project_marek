@@ -1,23 +1,6 @@
 @use "variables" as v;
 
-.whatsapp {
-    a {
-        color: #25D366;
-
-        &:hover {
-        text-decoration: underline;
-        }
-    }
-  
-    .whatsapp-icon {
-        fill: #25D366;
-        width: 20px;
-        height: 20px;
-    }
-    
-}
-
-.btn-contact-call {
+.btn-contact-call, .btn-contact-WhatsApp {
     display: flex; //aby transform zadziałało, zdjąć po poprawce sekcji
     z-index: 1;
     width: 120px;
@@ -30,7 +13,7 @@
     transition: .5s;
 }
 
-.btn-contact-call:hover, .btn-contact-call:focus {
+.btn-contact-call:hover, .btn-contact-call:focus, .btn-contact-WhatsApp:hover, .btn-contact-WhatsApp:focus {
     transform: translateY(-10px);
     background-color: v.$color-btn-header-main-hover;
 }
