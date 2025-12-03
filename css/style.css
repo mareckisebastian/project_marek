@@ -217,4 +217,34 @@ section h2 {
   text-align: center;
 }
 
+.whatsapp a {
+  color: #25D366;
+}
+.whatsapp a:hover {
+  text-decoration: underline;
+}
+.whatsapp .whatsapp-icon {
+  fill: #25D366;
+  width: 20px;
+  height: 20px;
+}
+
+.btn-contact-call {
+  display: flex;
+  z-index: 1;
+  width: 120px;
+  background-color: rgba(191, 179, 164, 0.462745098);
+  color: #0D0000;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.btn-contact-call:hover, .btn-contact-call:focus {
+  transform: translateY(-10px);
+  background-color: #BFB3A4;
+}
+
 /*# sourceMappingURL=style.css.map */

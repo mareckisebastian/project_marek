@@ -1,0 +1,36 @@
+@use "variables" as v;
+
+.whatsapp {
+    a {
+        color: #25D366;
+
+        &:hover {
+        text-decoration: underline;
+        }
+    }
+  
+    .whatsapp-icon {
+        fill: #25D366;
+        width: 20px;
+        height: 20px;
+    }
+    
+}
+
+.btn-contact-call {
+    display: flex; //aby transform zadziałało, zdjąć po poprawce sekcji
+    z-index: 1;
+    width: 120px;
+    background-color: v.$color-btn-header-main;
+    color: v.$color-head-big-text;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    text-align: center;
+    transition: .5s;
+}
+
+.btn-contact-call:hover, .btn-contact-call:focus {
+    transform: translateY(-10px);
+    background-color: v.$color-btn-header-main-hover;
+}
