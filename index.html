@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="pl, en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Weterynarz Wojkowice – Marek Ligęza. Wizyty domowe, gabinet, szczepienia, odrobaczanie, profilaktyka, odławianie zwierząt (DANiNJECT). Obsługa: Bobrowniki, Rogoźnik, Psary, Czeladź i okolice.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="css/style.css">
@@ -64,7 +65,7 @@
     </nav>
     <header class="header">
         <h1 class="head-big-text">Weterynarz w Wojkowicach <br> Profesjonalna Opieka Weterynaryjna i Wizyty Domowe</h1>
-        <a class="btn-header-main" href="#about">Dalej</a>
+        <a class="btn-header-main" href="#about" aria-label="Przejdź do sekcji O mnie">Dalej</a>
     </header>
 
     <main>
@@ -72,25 +73,33 @@
 
             <h2>O mnie</h2>
 
-            <article>
-                <h3>Tytuł artykułu1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, qui!</p>
-            </article>
+            <div class="container">
 
-            <article>
-                <h3>Tytuł artykułu2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, qui!</p>
-            </article>
-            
-            <article>
-                <h3>Tytuł artykułu3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, qui!</p>
-            </article>
+                <div class="row">
 
-            <article>
-                <h3>Tytuł artykułu4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, qui!</p>
-            </article>
+                    <article class="col col-m-50 col-l-25">
+                        <h3>Tytuł artykułu1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolorum vitae corporis vel et tempora voluptatem ea voluptatibus eum reprehenderit consequuntur, id accusantium, rem, in cum. Quos cupiditate eius quisquam atque, totam quia, hic dolore commodi laudantium assumenda asperiores nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, qui!</p>
+                    </article>
+        
+                    <article class="col col-m-50 col-l-25">
+                        <h3>Tytuł artykułu2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolorum vitae corporis vel et tempora voluptatem ea voluptatibus eum reprehenderit consequuntur, id accusantium, rem, in cum. Quos cupiditate eius quisquam atque, totam quia, hic dolore commodi laudantium assumenda asperiores nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, qui!</p>
+                    </article>
+                    
+                    <article class="col col-m-50 col-l-25">
+                        <h3>Tytuł artykułu3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolorum vitae corporis vel et tempora voluptatem ea voluptatibus eum reprehenderit consequuntur, id accusantium, rem, in cum. Quos cupiditate eius quisquam atque, totam quia, hic dolore commodi laudantium assumenda asperiores nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, qui!</p>
+                    </article>
+        
+                    <article class="col col-m-50 col-l-25">
+                        <h3>Tytuł artykułu4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolorum vitae corporis vel et tempora voluptatem ea voluptatibus eum reprehenderit consequuntur, id accusantium, rem, in cum. Quos cupiditate eius quisquam atque, totam quia, hic dolore commodi laudantium assumenda asperiores nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, qui!</p>
+                    </article>
+    
+                </div>
+
+            </div>
 
         </section>     
         
@@ -98,20 +107,38 @@
 
             <h2>Usługi Weterynaryjne</h2>
         
-            <h3>Wizyty Domowe</h3>
-            <p>Profesjonalne wizyty domowe na terenie Wojkowic i okolic — badania, leczenie, szczepienia oraz pełna opieka dla zwierząt bez konieczności transportu do gabinetu.</p>
-        
-            <h3>Szczepienia i Profilaktyka</h3>
-            <p>Szczepienia przeciwko chorobom zakaźnym, odrobaczanie oraz profilaktyka przeciw pasożytom zewnętrznym, takim jak pchły czy kleszcze.</p>
-        
-            <h3>Odławianie Zwierząt (DANiNJECT)</h3>
-            <p>Bezpieczne i humanitarne odławianie dzikich oraz bezdomnych zwierząt przy użyciu profesjonalnego sprzętu DANiNJECT.</p>
-        
-            <h3>Opieka nad Zwierzętami Towarzyszącymi</h3>
-            <p>Opieka nad psami, kotami, królikami, świnkami morskimi, chomikami i innymi małymi ssakami.</p>
-        
-            <h3>Zwierzęta Egzotyczne</h3>
-            <p>Konsultacje i podstawowa opieka weterynaryjna dla wybranych gatunków zwierząt egzotycznych.</p>
+            <div class="container">
+
+                <div class="row">
+
+                    <article class="col col-m-50 col-l-25">
+                        <h3>Wizyty Domowe</h3>
+                        <p>Profesjonalne wizyty domowe na terenie Wojkowic i okolic — badania, leczenie, szczepienia oraz pełna opieka dla zwierząt bez konieczności transportu do gabinetu.</p>
+                    </article>
+                    
+                    <article class="col col-m-50 col-l-25">
+                        <h3>Szczepienia i Profilaktyka</h3>
+                        <p>Szczepienia przeciwko chorobom zakaźnym, odrobaczanie oraz profilaktyka przeciw pasożytom zewnętrznym, takim jak pchły czy kleszcze.</p>
+                    </article>
+
+                    <article class="col col-m-50 col-l-25">
+                        <h3>Odławianie Zwierząt (DANiNJECT)</h3>
+                        <p>Bezpieczne i humanitarne odławianie dzikich oraz bezdomnych zwierząt przy użyciu profesjonalnego sprzętu DANiNJECT.</p>
+                    </article>
+
+                    <article class="col col-m-50 col-l-25">
+                        <h3>Opieka nad Zwierzętami Towarzyszącymi</h3>
+                        <p>Opieka nad psami, kotami, królikami, świnkami morskimi, chomikami i innymi małymi ssakami.</p>
+                    </article>
+
+                    <article class="col col-m-50 col-l-25">
+                        <h3>Zwierzęta Egzotyczne</h3>
+                        <p>Konsultacje i podstawowa opieka weterynaryjna dla wybranych gatunków zwierząt egzotycznych.</p>    
+                    </article>
+
+                </div>
+
+            </div>
 
         </section>
 
@@ -129,7 +156,7 @@
 
             <p><strong>Adres:</strong> ul. Spokojna 4, 42-580 Wojkowice, Polska</p>
 
-            <a class="btn-contact-WhatsApp" href="https://wa.me/48601425820" target="_blank" rel="noopener">
+            <a class="btn-contact-WhatsApp" href="https://wa.me/48601425820" target="_blank" rel="noopener" aria-label="Skontaktuj się przez WhatsApp">
                 WhatsApp
             </a>
 

@@ -1,0 +1,53 @@
+@use "mixins" as *;
+
+.container {
+    width: 96%;
+    margin: 0 auto;
+
+    @include media-queries {
+        width: 760px; 
+    }
+
+    @include media-queries ("l") {
+        width: 1000px;
+    }
+
+    @include media-queries ("xl") {
+        width: 1800px;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 0 0 100%;
+    padding: 10px;
+
+    &-m-50 {
+        @include media-queries {
+            flex-basis: 50%;
+        }
+        
+    }
+
+    &-m-25 {
+        @include media-queries {
+            flex-basis: 25%;
+        }
+    }
+
+    &-l-50 {
+        @include media-queries ("l") {
+            flex-basis: 50%;
+        }
+    }
+
+    &-l-25 {
+        @include media-queries ("l") {
+            flex-basis: 25%;
+        }
+    }
+}

@@ -2,7 +2,7 @@
 
 section {
   min-height: 100vh;
-  padding-top: 4rem;
+  padding-top: 8rem;
 
   &:nth-of-type(even) {
     background-color: v.$color-bg-main-section;
@@ -11,5 +11,7 @@ section {
   h2 {
     font-size: 3.4rem;
     text-align: center;
+    margin-bottom: 4rem;
+
   }
 }
