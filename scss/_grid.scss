@@ -33,6 +33,12 @@
         
     }
 
+    &-m-33 {
+        @include media-queries {
+            flex-basis: 33.333333%;
+        }
+    }
+
     &-m-25 {
         @include media-queries {
             flex-basis: 25%;
@@ -42,6 +48,12 @@
     &-l-50 {
         @include media-queries ("l") {
             flex-basis: 50%;
+        }
+    }
+
+    &-l-33 {
+        @include media-queries ("l") {
+            flex-basis: 33.333333%;
         }
     }
 
