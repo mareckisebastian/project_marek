@@ -9,8 +9,8 @@
     width: 100%;
     height: 7rem;
     color: v.$color-head-big-text;
-    background-color: v.$color-nav-bg;
     z-index: 2;
+    transition: background-color 0.5s ease;
 
     .material-symbols {
         font-size:6rem;
@@ -58,4 +58,9 @@
     flex-basis: 60%;
     padding-right: 2%;
     text-align: right;
+}
+
+.scroll_menu {
+    background-color: v.$color-nav-bg;
+    padding: 2%;
 }

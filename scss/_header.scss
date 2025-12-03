@@ -13,6 +13,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    position: relative;
 
     &::after {
         content: "";
@@ -41,6 +42,9 @@
     padding: 1rem;
     line-height: 3ex;
 
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out .1s forwards;
+
     @include media-queries {
         font-size: 5rem;
     }
@@ -63,6 +67,9 @@
     font-size: 1.8rem;
     text-align: center;
     transition: .5s;
+
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out .1s forwards;
 }
 
 .btn-header-main:hover, .btn-header-main:focus {
