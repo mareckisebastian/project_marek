@@ -52,19 +52,19 @@
 }
 
 .btn-contact-WhatsApp {
-    background-color: #25D366;
+    background-color: v.$color-whatsapp;
 
     &:hover {
         transform: translateY(-4px);
-        background-color: darken(#25D366, 10%);
+        background-color: darken(v.$color-whatsapp, 10%);
     }
 }
 
 .btn-contact-call {
-    background-color: #007BFF;
+    background-color: v.$color-call;
 
     &:hover {
         transform: translateY(-4px);
-        background-color: darken(#007BFF, 10%);
+        background-color: darken(v.$color-call, 10%);
     }
 }
