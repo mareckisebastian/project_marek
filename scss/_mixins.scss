@@ -1,4 +1,5 @@
 //punkty przełamania dla poszczególnych ekranów
+$bp-xs: 480px;
 $bp-m: 768px;
 $bp-l: 1024px;
 $bp-xl: 2048px;
@@ -6,7 +7,9 @@ $bp-xl: 2048px;
 
 @mixin media-queries($mw: "m") {
 
-    @if $mw == "m" {
+    @if $mw == "xs" {
+        $mw: $bp-xs;
+    } @else if $mw == "m" {
         $mw: $bp-m;
     } @else if $mw == "l" {
         $mw: $bp-l;

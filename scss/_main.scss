@@ -1,4 +1,5 @@
 @use "variables" as v;
+@use "mixins" as *;
 
 section {
   min-height: 100vh;
@@ -13,5 +14,12 @@ section {
     text-align: center;
     margin-bottom: 4rem;
 
+  }
+}
+
+@include media-queries("xs") {
+  section > h2 {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
   }
 }
