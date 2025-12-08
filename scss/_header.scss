@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: v.$color-head-big-text;   
+    color: v.$color-text;   
     background-image: url("../assets/img/bg_header_small.webp");
     background-size: cover;
     background-repeat: no-repeat;
@@ -36,7 +36,7 @@
 .head-big-text {
     z-index: 1;
     flex-basis: 23%;
-    color: v.$color-head-big-text;
+    color: v.$color-text;
     font-size: 3.6rem;
     text-align: center;
     padding: 1rem;
