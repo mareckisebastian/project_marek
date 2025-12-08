@@ -102,40 +102,27 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .col {
   flex: 0 0 100%;
   padding: 10px;
 }
-@media screen and (min-width: 768px) {
-  .col-m-50 {
-    flex-basis: 50%;
+@media screen and (min-width: 480px) {
+  .col {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .col-m-33 {
-    flex-basis: 33.333333%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .col-m-25 {
-    flex-basis: 25%;
+  .col .col-m-50 {
+    flex-basis: calc(50% - 2rem);
   }
 }
 @media screen and (min-width: 1024px) {
-  .col-l-50 {
-    flex-basis: 50%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .col-l-33 {
-    flex-basis: 33.333333%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .col-l-25 {
-    flex-basis: 25%;
+  .col .col-l-33 {
+    flex-basis: calc(33.333% - 2rem);
   }
 }
 

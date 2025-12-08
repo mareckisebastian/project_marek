@@ -20,46 +20,28 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .col {
     flex: 0 0 100%;
     padding: 10px;
 
-    &-m-50 {
-        @include media-queries {
-            flex-basis: 50%;
-        }
-        
-    }
+    @include media-queries("xs") {
+        flex-basis: 100%;
+        margin-bottom: 1rem;
+      }
 
-    &-m-33 {
-        @include media-queries {
-            flex-basis: 33.333333%;
+    @include media-queries("m") {
+        .col-m-50 {
+          flex-basis: calc(50% - 2rem);
         }
     }
 
-    &-m-25 {
-        @include media-queries {
-            flex-basis: 25%;
+    @include media-queries("l") {
+        .col-l-33 {
+          flex-basis: calc(33.333% - 2rem);
         }
-    }
+      }
 
-    &-l-50 {
-        @include media-queries ("l") {
-            flex-basis: 50%;
-        }
-    }
-
-    &-l-33 {
-        @include media-queries ("l") {
-            flex-basis: 33.333333%;
-        }
-    }
-
-    &-l-25 {
-        @include media-queries ("l") {
-            flex-basis: 25%;
-        }
-    }
 }
