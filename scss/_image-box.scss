@@ -40,10 +40,6 @@
       color: v.$color-text;
       line-height:1.5;
     }
-  
-    @include media-queries {
-      &__title { text-align:center; }
-    }
 
     @include media-queries("xs") {
       .image-box {
