@@ -1,12 +1,13 @@
+@use "sass:color";
 @use "variables" as v;
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 340px;
     gap: 4rem;
     align-items: center;
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         grid-template-columns: 1fr;
         text-align: center;
     }
@@ -14,15 +15,16 @@
 
 .contact-info {
     text-align: left;
+    padding: 2rem;
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         text-align: center;
     }
 
     p {
         font-size: 1.6rem;
-        margin-bottom: 1.4rem;
-        line-height: 1.4;
+        margin-bottom: 1.6rem;
+        line-height: 1.5;
     }
 
     a {
@@ -35,19 +37,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1.4rem;
 }
 
 .btn-contact-call,
 .btn-contact-WhatsApp {
     display: block;
-    width: 220px;
+    width: 100%;
+    max-width: 260px;
     padding: 1.6rem 0;
     border-radius: .8rem;
     font-size: 1.8rem;
     color: white;
     font-weight: 700;
     text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -56,7 +60,8 @@
 
     &:hover {
         transform: translateY(-4px);
-        background-color: darken(v.$color-whatsapp, 10%);
+        box-shadow: 0 12px 26px rgba(0, 0, 0, 0.15);
+        background-color: color.scale(v.$color-whatsapp, $lightness: -10%);
     }
 }
 
@@ -65,6 +70,7 @@
 
     &:hover {
         transform: translateY(-4px);
-        background-color: darken(v.$color-call, 10%);
+        box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+        background-color: color.scale(v.$color-call, $lightness: -10%);
     }
 }

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Weterynarz Wojkowice - Marek Ligęza | Wizyty Domowe, Gabinet | Bobrowniki, Rogoźnik, Psary, Czeladź</title>
+    <title>Weterynarz Wojkowice - Marek Ligęza | Wizyty domowe, Gabinet | Bobrowniki, Rogoźnik, Psary, Czeladź</title>
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -53,7 +53,7 @@
                 </span>
         </div>
         <div class="menu">
-            <span class="material-symbols">menu</span>
+            <span class="material-symbols" role="button" aria-expanded="false" aria-label="Otwórz menu">menu</span>
             <ul class="lista_menu">
                 <li class="pozycja_menu"><a href="#about">O mnie</a></li>
                 <li class="pozycja_menu"><a href="#services">Oferta</a></li>
@@ -64,77 +64,134 @@
         </div>
     </nav>
     <header class="header">
-        <h1 class="head-big-text">Weterynarz w Wojkowicach <br> Profesjonalna Opieka Weterynaryjna i Wizyty Domowe</h1>
+        <h1 class="head-big-text">Weterynarz w Wojkowicach <br> Profesjonalna opieka weterynaryjna i wizyty domowe</h1>
         <a class="btn-header-main" href="#services" aria-label="Przejdź do sekcji Oferta">Oferta</a>
     </header>
 
     <main>
-        <section id="about">
+        <section id="about" class="about-section" itemscope itemtype="https://schema.org/VeterinaryCare">
 
-            <h2>O mnie</h2>
-
+            <meta itemprop="name" content="Gabinet Weterynaryjny Marek Ligęza">
+            <meta itemprop="url" content="https://twojadomena.pl">
+            <meta itemprop="areaServed" content="Wojkowice, Bobrowniki, Psary, Rogoźnik, Czeladź, okolice">
+            <meta itemprop="telephone" content="+48 601 425 820">
+          
             <div class="container">
-
-                <div class="row">
-
-                    <article class="col col-m-50 col-l-25">
-                        <h3>Tytuł artykułu1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolorum vitae corporis vel et tempora voluptatem ea voluptatibus eum reprehenderit consequuntur, id accusantium, rem, in cum. Quos cupiditate eius quisquam atque, totam quia, hic dolore commodi laudantium assumenda asperiores nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, qui!</p>
-                    </article>
-        
-                    <article class="col col-m-50 col-l-25">
-                        <h3>Tytuł artykułu2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolorum vitae corporis vel et tempora voluptatem ea voluptatibus eum reprehenderit consequuntur, id accusantium, rem, in cum. Quos cupiditate eius quisquam atque, totam quia, hic dolore commodi laudantium assumenda asperiores nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, qui!</p>
-                    </article>
-                    
-                    <article class="col col-m-50 col-l-25">
-                        <h3>Tytuł artykułu3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolorum vitae corporis vel et tempora voluptatem ea voluptatibus eum reprehenderit consequuntur, id accusantium, rem, in cum. Quos cupiditate eius quisquam atque, totam quia, hic dolore commodi laudantium assumenda asperiores nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, qui!</p>
-                    </article>
-        
-                    <article class="col col-m-50 col-l-25">
-                        <h3>Tytuł artykułu4</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolorum vitae corporis vel et tempora voluptatem ea voluptatibus eum reprehenderit consequuntur, id accusantium, rem, in cum. Quos cupiditate eius quisquam atque, totam quia, hic dolore commodi laudantium assumenda asperiores nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, qui!</p>
-                    </article>
-    
-                </div>
-
+              <h2>Lekarz weterynarii Marek Ligęza – O mnie</h2>
+          
+              <div class="about-content" itemprop="employee" itemscope itemtype="https://schema.org/Person">
+                <meta itemprop="name" content="Marek Ligęza">
+                <meta itemprop="jobTitle" content="Lekarz Weterynarii">
+                <meta itemprop="worksFor" content="Gabinet Weterynaryjny Marek Ligęza">
+                <meta itemprop="address" content="ul. Spokojna 4, 42-580 Wojkowice, Polska">
+                <meta itemprop="sameAs" content="https://twojadomena.pl">
+          
+                <p>
+                  Nazywam się <strong itemprop="name">Marek Ligęza</strong> i od 
+                  <time datetime="1995-02-09">9 lutego 1995 roku</time> 
+                  z pełnym zaangażowaniem zajmuję się leczeniem i profilaktyką zwierząt.
+                </p>
+          
+                <p>
+                  Jestem <strong itemprop="jobTitle">lekarzem weterynarii</strong> ze specjalizacją w zakresie chorób zwierząt nieudomowionych. 
+                  W mojej pracy kieruję się troską o dobrostan zwierząt oraz bezpieczeństwo ich opiekunów.
+                </p>
+          
+                <p>
+                  Najczęściej pomagam <strong>psom, kotom, królikom, szynszylom i świnkom morskim</strong>, 
+                  a także zwierzętom nieudomowionym wymagającym interwencji w terenie. 
+                  Oferuję również <strong>wizyty domowe</strong> dla właścicieli, którzy chcą zapewnić swoim pupilom spokój i komfort podczas leczenia.
+                </p>
+          
+                <p>
+                  Posiadam <strong>16-letnie doświadczenie</strong> w interwencjach dotyczących dzikich zwierząt, takich jak 
+                  dziki, łosie, jelenie, sarny, daniele, arui, sika, węże, ptaki drapieżne, łabędzie czy nietoperze.  
+                  Wykonuję również interwencje dla <strong>miast i gmin</strong>, obejmujące pomoc i zabezpieczanie dzikich zwierząt w terenie.
+                </p>
+          
+                <p>
+                  Moje działania obejmują <strong>szczepienia profilaktyczne i obowiązkowe</strong>, 
+                  odrobaczenia wewnętrzne i zewnętrzne, 
+                  doraźną pomoc leczniczą oraz zabiegi sterylizacji.
+                </p>
+          
+                <p>
+                  Staram się reagować szybko i adekwatnie do sytuacji, z empatią wobec zwierząt i obiektywizmem.  
+                  Moim celem jest <strong>zdrowie i bezpieczeństwo ludzi</strong> poprzez <strong>zdrowie i komfort zwierząt</strong>.
+                </p>
+              </div>
             </div>
-
-        </section>     
+          
+            <!-- Dane strukturalne JSON-LD (Person + VeterinaryCare) -->
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Marek Ligęza",
+              "jobTitle": "Lekarz Weterynarii",
+              "worksFor": {
+                "@type": "VeterinaryCare",
+                "name": "Gabinet Weterynaryjny Marek Ligęza",
+                "url": "https://twojadomena.pl",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "ul. Spokojna 4",
+                  "postalCode": "42-580",
+                  "addressLocality": "Wojkowice",
+                  "addressCountry": "PL"
+                },
+                "telephone": "+48 601 425 820",
+                "areaServed": ["Wojkowice", "Bobrowniki", "Psary", "Rogoźnik", "Czeladź"]
+              },
+              "description": "Lekarz Weterynarii Marek Ligęza z Wojkowic. Wizyty domowe, leczenie psów, kotów, małych zwierząt oraz interwencje dotyczące dzikich zwierząt. Profesjonalna opieka weterynaryjna z dojazdem.",
+              "url": "https://twojadomena.pl"
+            }
+            </script>
+          </section>     
         
         <section id="services">
 
-            <h2>Usługi Weterynaryjne</h2>
+            <h2>Usługi weterynaryjne</h2>
         
             <div class="container">
 
                 <div class="row">
 
-                    <article class="col col-m-50 col-l-33">
-                        <h3>Wizyty Domowe</h3>
+                    <div class="col col-m-50 col-l-33 image-box">
+                        <h3>Wizyty domowe</h3>
+                        <div></div>
                         <p>Profesjonalne wizyty domowe na terenie Wojkowic i okolic — badania, leczenie, szczepienia oraz pełna opieka dla zwierząt bez konieczności transportu do gabinetu.</p>
-                    </article>
+                    </div>
                     
-                    <article class="col col-m-50 col-l-33">
-                        <h3>Szczepienia i Profilaktyka</h3>
-                        <p>Szczepienia przeciwko chorobom zakaźnym, odrobaczanie oraz profilaktyka przeciw pasożytom zewnętrznym, takim jak pchły czy kleszcze.</p>
-                    </article>
+                    <div class="col col-m-50 col-l-33 image-box">
+                        <h3>Szczepienia</h3>
+                        <div></div>
+                        <p>Szczepienia przeciwko chorobom zakaźnym dostosowane do wieku, gatunku i stanu zdrowia zwierzęcia. Ochrona przed najczęściej występującymi infekcjami.</p>
+                    </div>
 
-                    <article class="col col-m-50 col-l-33">
-                        <h3>Odławianie Zwierząt (DANiNJECT)</h3>
+                    <div class="col col-m-50 col-l-33 image-box">
+                        <h3>Profilaktyka przeciwpasożytnicza</h3>
+                        <div></div>
+                        <p>Odrobaczanie oraz zabezpieczenie przed pasożytami zewnętrznymi, takimi jak pchły, kleszcze czy wszoły. Dobór skutecznych preparatów i planów profilaktycznych.</p>
+                    </div>
+
+                    <div class="col col-m-50 col-l-33 image-box">
+                        <h3>Odławianie zwierząt (DANiNJECT)</h3>
+                        <div></div>
                         <p>Bezpieczne i humanitarne odławianie dzikich oraz bezdomnych zwierząt przy użyciu profesjonalnego sprzętu DANiNJECT.</p>
-                    </article>
+                    </div>
 
-                    <article class="col col-m-50 col-l-33">
-                        <h3>Opieka nad Zwierzętami Towarzyszącymi</h3>
+                    <div class="col col-m-50 col-l-33 image-box">
+                        <h3>Opieka nad zwierzętami towarzyszącymi</h3>
+                        <div></div>
                         <p>Opieka nad psami, kotami, królikami, świnkami morskimi, chomikami i innymi małymi ssakami.</p>
-                    </article>
+                    </div>
 
-                    <article class="col col-m-50 col-l-33">
-                        <h3>Zwierzęta Egzotyczne</h3>
+                    <div class="col col-m-50 col-l-33 image-box">
+                        <h3>Zwierzęta egzotyczne</h3>
+                        <div></div>
                         <p>Konsultacje i podstawowa opieka weterynaryjna dla wybranych gatunków zwierząt egzotycznych.</p>    
-                    </article>
+                    </div>
 
                 </div>
 
@@ -163,7 +220,7 @@
                 <div class="contact-info">
                     <h3>Dane firmy</h3>
         
-                    <p><strong>Lekarz Weterynarii:</strong><br>
+                    <p><strong>Lekarz weterynarii:</strong><br>
                         Marek Ligęza
                     </p>
         

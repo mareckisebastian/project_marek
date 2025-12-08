@@ -19,12 +19,38 @@
         }
     }
 
+    .material-symbols.active {
+        color: v.$color-btn-header-main;
+    }
+
     .lista_menu {
         display: none;
-        @include media-queries("l") {
-            display: block;
+
+        &.open {
             display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            background: white;
+            padding: 1.6rem;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+            position: absolute;
+            right: 2rem;
+            top: 7rem;
+        }
+
+        @include media-queries("l") {
+            display: flex;              // menu widoczne na desktopie
+            flex-direction: row;
             justify-content: space-evenly;
+            position: static;           // ważne! usuwa absolutne pozycjonowanie
+            background: none;
+            padding: 0;
+            box-shadow: none;
+
+            .lista_menu.open {
+                display: flex;
+            }
         }
     }
 }
