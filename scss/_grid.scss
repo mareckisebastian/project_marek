@@ -18,9 +18,18 @@
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+    display: grid;
+    gap: 3rem;
+
+    grid-template-columns: 1fr;
+
+    @include media-queries("m") {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-queries("xl") {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .col {
