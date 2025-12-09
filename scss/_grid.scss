@@ -25,23 +25,19 @@
 
 .col {
     flex: 0 0 100%;
-    padding: 10px;
+    padding: 1rem;
 
     @include media-queries("xs") {
         flex-basis: 100%;
         margin-bottom: 1rem;
-      }
+    }
 
     @include media-queries("m") {
-        .col-m-50 {
           flex-basis: calc(50% - 2rem);
-        }
     }
 
     @include media-queries("l") {
-        .col-l-33 {
+          // Subtracting 2rem to account for the gap between columns
           flex-basis: calc(33.333% - 2rem);
-        }
-      }
-
+    }
 }

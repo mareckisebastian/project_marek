@@ -26,7 +26,6 @@
 
     @include media-queries("xs") {
         .hero-title {
-          font-size: 2.4rem;
           padding: 0.5rem;
         }
       
@@ -39,7 +38,7 @@
         }
     }
 
-    @include media-queries {
+    @include media-queries ("m"){
         background-image: url("../assets/img/bg_header_medium.webp");
     }
 

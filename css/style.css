@@ -107,7 +107,7 @@ a {
 
 .col {
   flex: 0 0 100%;
-  padding: 10px;
+  padding: 1rem;
 }
 @media screen and (min-width: 480px) {
   .col {
@@ -116,12 +116,12 @@ a {
   }
 }
 @media screen and (min-width: 768px) {
-  .col .col-m-50 {
+  .col {
     flex-basis: calc(50% - 2rem);
   }
 }
 @media screen and (min-width: 1024px) {
-  .col .col-l-33 {
+  .col {
     flex-basis: calc(33.333% - 2rem);
   }
 }
@@ -238,7 +238,6 @@ a {
 }
 @media screen and (min-width: 480px) {
   .header .hero-title {
-    font-size: 2.4rem;
     padding: 0.5rem;
   }
   .header .logo_firmy {
@@ -389,12 +388,14 @@ section:nth-of-type(even) {
   }
 }
 .image-box {
-  background: #EBEDF2;
-  border-radius: 0.8rem;
-  padding: 1.2rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  background: #EBEDF2;
+  border-radius: 0.8rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   gap: 1rem;
 }
 .image-box__title {
@@ -421,6 +422,7 @@ section:nth-of-type(even) {
   font-size: 1.4rem;
   color: #0D0000;
   line-height: 1.5;
+  flex-grow: 1;
 }
 @media screen and (min-width: 768px) {
   .image-box__title {
@@ -442,6 +444,11 @@ section:nth-of-type(even) {
   }
   .image-box__text {
     font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .image-box .image-box:hover .image-box__picture {
+    transform: scale(1.05);
   }
 }
 
