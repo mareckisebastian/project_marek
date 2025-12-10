@@ -3,17 +3,21 @@
 .container {
     width: 96%;
     margin: 0 auto;
+    padding: 0 1.6rem;
 
     @include media-queries {
         max-width: 760px; 
+        padding: 0 2rem;
     }
 
     @include media-queries ("l") {
         max-width: 1280px;
+        padding: 0 2.4rem;
     }
 
     @include media-queries ("xl") {
         max-width: 1800px;
+        padding: 0 3rem;
     }
 }
 
@@ -34,6 +38,7 @@
 
 .col {
     display: flex;
+    flex-direction: column;
     min-width: 0; // pozwala gridowi zawężać kolumnę i zapobiega wychodzeniu poza viewport
     padding: 1rem;
 }
