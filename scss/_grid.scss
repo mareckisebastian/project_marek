@@ -9,7 +9,7 @@
     }
 
     @include media-queries ("l") {
-        width: 1000px;
+        width: 1280px;
     }
 
     @include media-queries ("xl") {
@@ -27,23 +27,11 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @include media-queries("xl") {
+    @include media-queries("l") {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 .col {
     padding: 1rem;
-
-    @include media-queries("xs") {
-        grid-column: span 1;
-    }
-
-    @include media-queries("m") {
-        grid-column: span 1;
-    }
-
-    @include media-queries("l") {
-        grid-column: span 1;
-    }
 }

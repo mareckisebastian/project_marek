@@ -90,7 +90,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .container {
-    width: 1000px;
+    width: 1280px;
   }
 }
 @media screen and (min-width: 2048px) {
@@ -109,7 +109,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (min-width: 2048px) {
+@media screen and (min-width: 1024px) {
   .row {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -117,21 +117,6 @@ a {
 
 .col {
   padding: 1rem;
-}
-@media screen and (min-width: 480px) {
-  .col {
-    grid-column: span 1;
-  }
-}
-@media screen and (min-width: 768px) {
-  .col {
-    grid-column: span 1;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .col {
-    grid-column: span 1;
-  }
 }
 
 .nav {
