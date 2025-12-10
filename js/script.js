@@ -2,7 +2,7 @@
 
 const nav = document.querySelector("nav");
 // mobile menu toggle
-const menuIcon = document.querySelector(".material-symbols");
+const menuIcon = document.querySelector(".material-symbols-outlined");
 const menuList = document.querySelector(".lista_menu");
 
 const handleScroll = () => {
@@ -19,17 +19,15 @@ window.addEventListener("scroll", handleScroll);
 menuIcon.addEventListener("click", () => {
     menuList.classList.toggle("open");
     menuIcon.classList.toggle("active");
-    menuIcon.setAttribute(
-        "aria-expanded",
-        menuList.classList.contains("open")
-    );
+    menuIcon.setAttribute("aria-expanded", menuList.classList.contains("open"));
 });
 
 // zamykanie menu po kliknięciu w link
 document.querySelectorAll(".lista_menu a").forEach(link => {
     link.addEventListener("click", () => {
         menuList.classList.remove("open");
-        menuIcon.classList.toggle("active");
+        menuIcon.classList.remove("active");
+        menuIcon.setAttribute("aria-expanded", "false");
     });
 });
 
@@ -38,9 +36,9 @@ window.addEventListener("resize", () => {
     if (window.innerWidth >= 1024) {
         menuList.classList.remove("open");
         menuIcon.classList.remove("active");
+        menuIcon.setAttribute("aria-expanded", "false");
     }
 });
-
 
 
 

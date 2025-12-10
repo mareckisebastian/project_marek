@@ -16,16 +16,10 @@ section {
   line-height: 1.3;
 }
 
-@include media-queries("xs") {
-  .section-title {
-    font-size: 2.6rem;
-    margin-bottom: 2rem;
-  }
-}
-
 @include media-queries("m") {
   .section-title {
     font-size: 3.4rem;
+    margin-bottom: 2rem;
   }
 }
 

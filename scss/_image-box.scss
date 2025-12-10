@@ -4,7 +4,6 @@
 .image-box {
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
     flex: 1 1 16rem;
     min-width: 0;
     height: 100%;
@@ -23,31 +22,28 @@
     }
 
     &__inner {
-      display: block;
-      position: relative;
-      min-width: 0;
+      display: grid;
+      grid-template-columns: minmax(10rem, 40%) 1fr;
+      align-items: flex-start;
       gap: 1.2rem;
-
-      &::after {
-        content: "";
-        display: block;
-        clear: both;
-      }
+      min-width: 0;
     }
 
     &__media {
-      width: 11rem;
+      width: 100%;
+      min-width: 10rem;
+      max-width: 14rem;
       height: auto;
       aspect-ratio: 4 / 3;
       border-radius:.6rem;
       overflow:hidden;
-      float: left;
-      margin-right: 1.2rem;
-      margin-bottom: .8rem;
     }
 
     &__content {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 14rem;
+      min-width: 0;
     }
   
     &__picture {
@@ -72,18 +68,38 @@
     }
 
     @include media-queries("m") {
-      &__media {width: 12rem; height: auto; aspect-ratio: 4 / 3;}
+      &__inner { grid-template-columns: minmax(11rem, 38%) 1fr; }
+      &__media {max-width: 15rem;}
       &__title { font-size: 1.9rem; }
       &__text { font-size: 1.5rem; }
     }
   
     @include media-queries("l") {
-      &__media {width: 14rem; height: 10.5rem;}
+      &__inner { grid-template-columns: minmax(14rem, 35%) 1fr; }
+      &__media {max-width: 18rem; height: 10.5rem;}
       &__title { font-size: 2rem; }
       &__text { font-size: 1.6rem; }
 
-      .image-box:hover .image-box__picture {
+      &:hover .image-box__picture {
         transform: scale(1.05);
+      }
+    }
+
+    // Na bardzo wąskich ekranach obrazek nad tekstem
+    @media screen and (max-width: 720px) {
+      &__inner {
+        grid-template-columns: 1fr;
+        align-items: center;
+      }
+
+      &__media {
+        width: 100%;
+        max-width: 16rem;
+        justify-self: center;
+      }
+
+      &__content {
+        width: 100%;
       }
     }
 }
