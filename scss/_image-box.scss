@@ -4,6 +4,10 @@
 .image-box {
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 16rem;
+    min-width: 0;
+    height: 100%;
     background: v.$color-img-bg;
     border-radius: .8rem;
     padding: 1.6rem;
@@ -18,24 +22,31 @@
       text-align: center;
     }
 
-    .image-box__inner {
-      display: flex;
-      align-items: flex-start;
-      gap: 1.6rem;
+    &__inner {
+      display: block;
+      position: relative;
+      min-width: 0;
+      gap: 1.2rem;
+
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
     }
 
     &__media {
-      width: 14rem;
-      height: 10.5rem;
+      width: 12rem;
+      height: 9rem;
       border-radius:.6rem;
       overflow:hidden;
-      flex-shrink: 0;
+      float: left;
+      margin-right: 1.2rem;
+      margin-bottom: .8rem;
     }
 
     &__content {
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
+      display: block;
     }
   
     &__picture {
@@ -51,21 +62,22 @@
     }
   
     &__text {
-      flex: 1;
       font-size: 1.4rem;
       color: v.$color-text;
       line-height:1.5;
       margin-top: .3rem;
+      hyphens: auto;
+      text-align: justify;
     }
 
     @include media-queries("m") {
-      &__media {width: 16rem; height: 12rem;}
+      &__media {width: 13rem; height: 10rem;}
       &__title { font-size: 1.9rem; }
       &__text { font-size: 1.5rem; }
     }
   
     @include media-queries("l") {
-      &__media {width: 18rem; height: 13.5rem;}
+      &__media {width: 14rem; height: 10.5rem;}
       &__title { font-size: 2rem; }
       &__text { font-size: 1.6rem; }
 
