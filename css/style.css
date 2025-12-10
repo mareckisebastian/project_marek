@@ -226,7 +226,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   position: relative;
 }
 .header::after {
@@ -246,6 +246,18 @@ a {
   }
   .header .nav {
     height: 6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    background-attachment: fixed;
+    background-position: center center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    background-attachment: fixed;
+    background-position: center center;
   }
 }
 
