@@ -5,7 +5,7 @@
     margin: 0 auto;
     padding: 0 1.6rem;
 
-    @include media-queries {
+    @include media-queries ("m") {
         max-width: 760px; 
         padding: 0 2rem;
     }
