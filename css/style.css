@@ -475,42 +475,6 @@ article p {
     transform: scale(1.05);
   }
 }
-@media screen and (max-width: 640px) {
-  .image-box__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .image-box__media {
-    float: none;
-    margin: 0 0 1rem;
-    width: 100%;
-    max-width: 16rem;
-    height: auto;
-    aspect-ratio: 4/3;
-  }
-  .image-box__content {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 640px) {
-  .image-box__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .image-box__media {
-    float: none;
-    margin: 0 0 1rem;
-    width: 100%;
-    max-width: 16rem;
-    height: auto;
-    aspect-ratio: 4/3;
-  }
-  .image-box__content {
-    width: 100%;
-  }
-}
 
 .contact-grid {
   display: grid;

@@ -85,26 +85,4 @@
         transform: scale(1.05);
       }
     }
-
-    // Uproszczony układ na bardzo wąskich ekranach — obrazek nad tekstem
-    @media screen and (max-width: 640px) {
-      &__inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      &__media {
-        float: none;
-        margin: 0 0 1rem;
-        width: 100%;
-        max-width: 16rem;
-        height: auto;
-        aspect-ratio: 4 / 3;
-      }
-
-      &__content {
-        width: 100%;
-      }
-    }
 }
