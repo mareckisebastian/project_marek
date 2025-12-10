@@ -9,7 +9,7 @@
     align-items: center;
     color: v.$color-text;   
     text-align: justify;
-    background-image: url("../assets/img/bg_header_small.webp");
+    background-image: url("../assets/img/pexels-gustavo-fring-6816871.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -39,13 +39,13 @@
         }
     }
 
-    @include media-queries ("m"){
-        background-image: url("../assets/img/bg_header_medium.webp");
-    }
+    //@include media-queries ("m"){
+        //background-image: url("../assets/img/bg_header_medium.webp");
+    //}
 
-    @include media-queries ("l") {
-        background-image: url("../assets/img/bg_header_big.webp");
-    }
+    //@include media-queries ("l") {
+        //background-image: url("../assets/img/bg_header_big.webp");
+    //}
 }
 
 .hero-title {

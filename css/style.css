@@ -222,7 +222,7 @@ a {
   align-items: center;
   color: #0D0000;
   text-align: justify;
-  background-image: url("../assets/img/bg_header_small.webp");
+  background-image: url("../assets/img/pexels-gustavo-fring-6816871.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -246,16 +246,6 @@ a {
   }
   .header .nav {
     height: 6rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header {
-    background-image: url("../assets/img/bg_header_medium.webp");
-  }
-}
-@media screen and (min-width: 1024px) {
-  .header {
-    background-image: url("../assets/img/bg_header_big.webp");
   }
 }
 
