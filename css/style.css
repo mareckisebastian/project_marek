@@ -307,11 +307,6 @@ section:nth-of-type(even) {
   background-color: #EBEDF2;
 }
 
-@media screen and (min-width: 480px) {
-  section {
-    padding-top: 5rem;
-  }
-}
 .section-title {
   font-size: 3rem;
   text-align: center;
@@ -383,10 +378,6 @@ section:nth-of-type(even) {
   .section-text {
     font-size: 1.9rem;
   }
-}
-
-article p {
-  text-align: justify;
 }
 article p {
   text-align: justify;

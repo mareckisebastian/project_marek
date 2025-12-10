@@ -10,12 +10,6 @@ section {
   }
 }
 
-@include media-queries("xs") {
-  section {
-    padding-top: 5rem;
-  }
-}
-
 .section-title {
   font-size: 3rem;
   text-align: center;
