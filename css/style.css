@@ -243,12 +243,6 @@ a {
 .header .nav {
   height: 6rem;
 }
-@media screen and (min-width: 1024px) {
-  .header {
-    background-attachment: fixed;
-    background-position: center center;
-  }
-}
 @media screen and (min-width: 768px) {
   .header {
     background-image: url("../assets/img/hero_m.webp");
@@ -256,6 +250,8 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .header {
+    background-attachment: fixed;
+    background-position: center center;
     background-image: url("../assets/img/hero_l.webp");
   }
 }
@@ -271,24 +267,22 @@ a {
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out 0.1s forwards;
 }
-@media screen and (min-width: 480px) {
-  .hero-title {
-    padding: 0.5rem;
-  }
-}
 @media screen and (min-width: 768px) {
   .hero-title {
     font-size: 5rem;
+    padding: 2rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .hero-title {
     font-size: 6rem;
+    padding: 3rem;
   }
 }
 @media screen and (min-width: 2048px) {
   .hero-title {
     font-size: 9rem;
+    padding: 4rem;
   }
 }
 

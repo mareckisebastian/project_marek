@@ -33,16 +33,13 @@
           height: 6rem;
         }
 
-    @include media-queries("l") {
-        background-attachment: fixed;
-        background-position: center center;
-    }
-
     @include media-queries("m") {
         background-image: url("../assets/img/hero_m.webp");
     }
 
     @include media-queries("l") {
+        background-attachment: fixed;
+        background-position: center center;
         background-image: url("../assets/img/hero_l.webp");
     }
 }
@@ -59,20 +56,19 @@
     opacity: 0;
     animation: fadeIn 1.5s ease-in-out .1s forwards;
 
-    @include media-queries("xs") {
-          padding: 0.5rem;
-    }
-
     @include media-queries("m") {
         font-size: 5rem;
+        padding: 2rem;
     }
     
     @include media-queries ("l") {
         font-size: 6rem;
+        padding: 3rem;
     }  
     
     @include media-queries ("xl") {
         font-size: 9rem;
+        padding: 4rem;
     }
 }
 
