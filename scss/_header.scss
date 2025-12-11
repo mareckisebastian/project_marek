@@ -9,7 +9,7 @@
     align-items: center;
     color: v.$color-text;   
     text-align: justify;
-    background-image: url("../assets/img/pexels-gustavo-fring-6816871.jpg");
+    background-image: url("../assets/img/hero_s.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -24,12 +24,7 @@
         background: rgba(255, 255, 255, 0.5);
         position: absolute;
     }
-
-    @include media-queries("xs") {
-        .hero-title {
-          padding: 0.5rem;
-        }
-      
+   
         .logo_firmy {
           height: 5rem;
         }
@@ -37,11 +32,18 @@
         .nav {
           height: 6rem;
         }
-    }
 
     @include media-queries("l") {
         background-attachment: fixed;
         background-position: center center;
+    }
+
+    @include media-queries("m") {
+        background-image: url("../assets/img/hero_m.webp");
+    }
+
+    @include media-queries("l") {
+        background-image: url("../assets/img/hero_l.webp");
     }
 }
 
@@ -56,6 +58,10 @@
 
     opacity: 0;
     animation: fadeIn 1.5s ease-in-out .1s forwards;
+
+    @include media-queries("xs") {
+          padding: 0.5rem;
+    }
 
     @include media-queries("m") {
         font-size: 5rem;
