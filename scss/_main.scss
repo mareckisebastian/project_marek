@@ -70,10 +70,6 @@ section {
   text-align: justify;
 }
 
-.section-text--center {
-  text-align: center;
-}
-
 @include media-queries("m") {
   .section-text {
     font-size: 1.6rem;

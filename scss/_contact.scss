@@ -88,3 +88,13 @@
         text-align: center;
     }
 }
+
+.info-note {
+    max-width: 78ch;
+    margin: 0 auto 2rem;
+    padding: 1.6rem 2rem;
+    background-color: v.$color-info-note;
+    border-left: 4px solid v.$color-info-note-border;
+    border-radius: .8rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  }

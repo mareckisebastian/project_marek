@@ -372,10 +372,6 @@ section:nth-of-type(even) {
   text-align: justify;
 }
 
-.section-text--center {
-  text-align: center;
-}
-
 @media screen and (min-width: 768px) {
   .section-text {
     font-size: 1.6rem;
@@ -510,6 +506,15 @@ article p {
   width: 100%;
   display: block;
 }
+#location .info-note {
+  max-width: 78ch;
+  margin: 0 auto 2rem;
+  padding: 1.6rem 2rem;
+  background-color: #D2D3D9;
+  border-left: 4px solid #AFBF34;
+  border-radius: 0.8rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
 
 .contact-grid {
   display: grid;
@@ -596,6 +601,16 @@ article p {
   .contact-note {
     text-align: center;
   }
+}
+
+.info-note {
+  max-width: 78ch;
+  margin: 0 auto 2rem;
+  padding: 1.6rem 2rem;
+  background-color: #BFB3A4;
+  border-left: 4px solid #AFBF34;
+  border-radius: 0.8rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 /*# sourceMappingURL=style.css.map */
