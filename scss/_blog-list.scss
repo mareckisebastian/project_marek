@@ -1,0 +1,53 @@
+@use "variables" as v;
+@use "mixins" as *;
+
+.blog-list {
+  display: grid;
+  gap: 2.4rem;
+
+  @include media-queries("m") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-queries("l") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.blog-card {
+  background: v.$color-bg-main-section;
+  border-radius: .8rem;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+
+.blog-card__link {
+  display: block;
+  height: 100%;
+}
+
+.blog-card__image {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+
+.blog-card__content {
+  padding: 1.6rem;
+}
+
+.blog-card__title {
+  font-size: 1.8rem;
+  margin-bottom: .8rem;
+}
+
+.blog-card__excerpt {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+.blog-card__cta {
+  font-weight: 700;
+  font-size: 1.4rem;
+}

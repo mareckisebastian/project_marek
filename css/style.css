@@ -607,4 +607,57 @@ article p {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
+.blog-list {
+  display: grid;
+  gap: 2.4rem;
+}
+@media screen and (min-width: 768px) {
+  .blog-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .blog-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.blog-card {
+  background: #EBEDF2;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.blog-card__link {
+  display: block;
+  height: 100%;
+}
+
+.blog-card__image {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+
+.blog-card__content {
+  padding: 1.6rem;
+}
+
+.blog-card__title {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.blog-card__excerpt {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+.blog-card__cta {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
 /*# sourceMappingURL=style.css.map */
