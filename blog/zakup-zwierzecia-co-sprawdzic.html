@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <title>Zakup zwierzęcia – co sprawdzić? | Blog</title>
   <meta name="description" content="Co zrobić przed zakupem zwierzęcia: koszty, warunki opieki, źródło zakupu i dokumenty (książeczka zdrowia, potwierdzenie zakupu).">
@@ -22,7 +25,13 @@
 
       <figure class="blog-post__image">
         <img
-          src="../assets/img/blog_zakup_zwierzecia_l.webp"
+          src="../assets/img/blog_zakup_zwierzecia_s.webp"
+          srcset="
+            ../assets/img/blog_zakup_zwierzecia_s.webp 480w,
+            ../assets/img/blog_zakup_zwierzecia_m.webp 900w,
+            ../assets/img/blog_zakup_zwierzecia_l.webp 1600w
+          "
+          sizes="(max-width:768px) 92vw, (max-width:1024px) 80vw, 900px"
           alt="Zakup zwierzęcia – przemyślana decyzja"
           loading="lazy"
           width="1600"

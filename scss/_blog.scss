@@ -1,0 +1,105 @@
+@use "variables" as v;
+@use "mixins" as *;
+
+.blog {
+  padding: 6rem 0;
+}
+
+.blog-post {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.2rem 4rem;
+
+  &__header {
+    margin-bottom: 2.4rem;
+  }
+
+  &__meta {
+    margin-bottom: 1.2rem;
+  }
+
+  &__back {
+    font-size: 1.4rem;
+    color: v.$color-text;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover { text-decoration: underline; }
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 0 0 2rem;
+    line-height: 1.2;
+  }
+
+  &__image {
+    margin: 0 0 3rem 0;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    }
+
+    figcaption {
+      margin-top: .8rem;
+      font-size: 1.3rem;
+      color: v.$color-text;
+      opacity: .8;
+    }
+  }
+
+  &__content {
+    font-size: 1.6rem;
+    line-height: 1.7;
+  }
+
+  &__lead {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+  }
+
+  &__section-title {
+    font-size: 2rem;
+    margin: 2.4rem 0 1.2rem;
+  }
+
+  &__text {
+    margin-bottom: 1.6rem;
+  }
+
+  &__list {
+    margin: 0 0 2rem 1.4rem;
+    padding: 0;
+    list-style: disc;
+  }
+
+  &__list-item {
+    margin-bottom: .8rem;
+    line-height: 1.6;
+  }
+
+  &__note {
+    margin: 2.4rem 0;
+    padding: 1.4rem 1.6rem;
+    background: v.$color-bg-main-section;
+    border-left: 4px solid v.$color3;
+    border-radius: .6rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  }
+
+  @include media-queries("m") {
+    &__title { font-size: 3.2rem; }
+    &__content { font-size: 1.7rem; }
+    &__lead { font-size: 1.8rem; }
+  }
+
+  @include media-queries("l") {
+    &__title { font-size: 3.6rem; }
+  }
+}

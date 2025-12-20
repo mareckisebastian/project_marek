@@ -6,6 +6,7 @@ const menuIcon = document.querySelector(".material-symbols-outlined");
 const menuList = document.querySelector(".lista_menu");
 
 const handleScroll = () => {
+    if (!nav) return;
     if (window.scrollY > 100) {
         nav.classList.add("scroll_menu");
     } else {
@@ -13,32 +14,36 @@ const handleScroll = () => {
     }
 };
 
-window.addEventListener("scroll", handleScroll);
+if (nav) {
+    window.addEventListener("scroll", handleScroll);
+}
 
-//rozwijanie i zwijanie menu
-menuIcon.addEventListener("click", () => {
-    menuList.classList.toggle("open");
-    menuIcon.classList.toggle("active");
-    menuIcon.setAttribute("aria-expanded", menuList.classList.contains("open"));
-});
-
-// zamykanie menu po kliknięciu w link
-document.querySelectorAll(".lista_menu a").forEach(link => {
-    link.addEventListener("click", () => {
-        menuList.classList.remove("open");
-        menuIcon.classList.remove("active");
-        menuIcon.setAttribute("aria-expanded", "false");
+if (menuIcon && menuList) {
+    // rozwijanie i zwijanie menu
+    menuIcon.addEventListener("click", () => {
+        menuList.classList.toggle("open");
+        menuIcon.classList.toggle("active");
+        menuIcon.setAttribute("aria-expanded", menuList.classList.contains("open"));
     });
-});
 
-// reset menu when switching to desktop view
-window.addEventListener("resize", () => {
-    if (window.innerWidth >= 1024) {
-        menuList.classList.remove("open");
-        menuIcon.classList.remove("active");
-        menuIcon.setAttribute("aria-expanded", "false");
-    }
-});
+    // zamykanie menu po kliknięciu w link
+    document.querySelectorAll(".lista_menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            menuList.classList.remove("open");
+            menuIcon.classList.remove("active");
+            menuIcon.setAttribute("aria-expanded", "false");
+        });
+    });
+
+    // reset menu when switching to desktop view
+    window.addEventListener("resize", () => {
+        if (window.innerWidth >= 1024) {
+            menuList.classList.remove("open");
+            menuIcon.classList.remove("active");
+            menuIcon.setAttribute("aria-expanded", "false");
+        }
+    });
+}
 
 
 
