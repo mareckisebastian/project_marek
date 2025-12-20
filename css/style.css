@@ -504,7 +504,7 @@ article p {
   max-width: 78ch;
   margin: 0 auto 2rem;
   padding: 1.6rem 2rem;
-  background-color: #D2D3D9;
+  background-color: #BFB3A4;
   border-left: 4px solid #AFBF34;
   border-radius: 0.8rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
@@ -664,6 +664,27 @@ article p {
   padding: 6rem 0;
 }
 
+.nav--blog {
+  position: sticky;
+  top: 0;
+  height: auto;
+  padding: 1.2rem 2rem;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  z-index: 3;
+  justify-content: space-between;
+}
+
+.menu--blog {
+  flex-basis: auto;
+  padding-right: 0;
+}
+
+.nav__back {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
 .blog-post {
   max-width: 900px;
   margin: 0 auto;
@@ -709,6 +730,7 @@ article p {
 .blog-post__content {
   font-size: 1.6rem;
   line-height: 1.7;
+  text-align: justify;
 }
 .blog-post__lead {
   font-size: 1.7rem;
@@ -730,6 +752,7 @@ article p {
 .blog-post__list-item {
   margin-bottom: 0.8rem;
   line-height: 1.6;
+  text-align: justify;
 }
 .blog-post__note {
   margin: 2.4rem 0;
@@ -737,7 +760,39 @@ article p {
   background: #EBEDF2;
   border-left: 4px solid #AFBF34;
   border-radius: 0.6rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+.blog-post__pager {
+  display: grid;
+  gap: 1.2rem;
+  margin-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .blog-post__pager {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.blog-post__pager-link {
+  display: block;
+  padding: 1.4rem 1.6rem;
+  background: #EBEDF2;
+  border-radius: 0.8rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #0D0000;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.blog-post__pager-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+.blog-post__pager-link--next {
+  text-align: right;
+  justify-self: end;
+}
+.blog-post__pager-link--prev {
+  text-align: left;
 }
 @media screen and (min-width: 768px) {
   .blog-post__title {

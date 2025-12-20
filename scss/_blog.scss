@@ -5,6 +5,28 @@
   padding: 6rem 0;
 }
 
+
+.nav--blog {
+  position: sticky;
+  top: 0;
+  height: auto;
+  padding: 1.2rem 2rem;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  z-index: 3;
+  justify-content: space-between;
+}
+
+.menu--blog {
+  flex-basis: auto;
+  padding-right: 0;
+}
+
+.nav__back {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
 .blog-post {
   max-width: 900px;
   margin: 0 auto;
@@ -56,6 +78,7 @@
   &__content {
     font-size: 1.6rem;
     line-height: 1.7;
+    text-align: justify;
   }
 
   &__lead {
@@ -82,6 +105,7 @@
   &__list-item {
     margin-bottom: .8rem;
     line-height: 1.6;
+    text-align: justify;
   }
 
   &__note {
@@ -90,7 +114,43 @@
     background: v.$color-bg-main-section;
     border-left: 4px solid v.$color3;
     border-radius: .6rem;
-    box-shadow: 0 6px 18px rgba(0,0,0,.06);
+    box-shadow: 0 6px 18px rgba(0,0,0,.12);
+  }
+
+  &__pager {
+    display: grid;
+    gap: 1.2rem;
+    margin-top: 3rem;
+
+    @include media-queries("m") {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__pager-link {
+    display: block;
+    padding: 1.4rem 1.6rem;
+    background: v.$color-bg-main-section;
+    border-radius: .8rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,.12);
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: v.$color-text;
+    transition: transform .2s ease, box-shadow .2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(0,0,0,.15);
+    }
+  }
+
+  &__pager-link--next {
+    text-align: right;
+    justify-self: end;
+  }
+
+  &__pager-link--prev {
+    text-align: left;
   }
 
   @include media-queries("m") {
