@@ -2,7 +2,7 @@
 @use "mixins" as *;
 
 .blog {
-  padding: 6rem 0;
+  padding: 8rem 0 6rem;
 }
 
 
@@ -15,6 +15,11 @@
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
   z-index: 3;
   justify-content: space-between;
+
+  &.scroll_menu {
+    background: v.$color-nav-bg;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+  }
 }
 
 .menu--blog {
@@ -161,5 +166,37 @@
 
   @include media-queries("l") {
     &__title { font-size: 3.6rem; }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blog-post__pager {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-post__pager-link {
+    width: 100%;
+    justify-self: stretch;
+    text-align: center;
+    padding: 1.2rem 1.4rem;
+    font-size: 0;
+  }
+
+  .blog-post__pager-link .pager-text {
+    display: none;
+  }
+
+  .blog-post__pager-link::before {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: v.$color-text;
+  }
+
+  .blog-post__pager-link--prev::before {
+    content: "← Poprzedni";
+  }
+
+  .blog-post__pager-link--next::before {
+    content: "Następny →";
   }
 }
