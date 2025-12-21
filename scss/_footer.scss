@@ -1,0 +1,92 @@
+@use "variables" as v;
+
+.footer {
+  background: v.$color-bg-main-section;
+  padding: 4rem 1rem 2.4rem;
+  margin-top: 4rem;
+
+  .section-text {
+    color: v.$color-text;
+    text-align: left;
+  }
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2.4rem;
+  align-items: flex-start;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+
+  a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: v.$color-text;
+  }
+}
+
+.footer-cta {
+  gap: 1rem;
+
+  .btn-contact-call,
+  .btn-contact-WhatsApp {
+    max-width: 260px;
+    width: 100%;
+  }
+}
+
+.footer-map {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: v.$color-call;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.4rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  &__text {
+    font-size: 1.4rem;
+    color: v.$color-text;
+  }
+
+  &__links {
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+
+    a {
+      font-size: 1.4rem;
+      color: v.$color-text;
+      font-weight: 600;
+    }
+  }
+}
+
+.footer-note {
+  margin-top: 0.8rem;
+}
