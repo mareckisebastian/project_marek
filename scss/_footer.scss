@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "variables" as v;
 
 .footer {
@@ -13,7 +14,7 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.4rem;
   align-items: flex-start;
 }
@@ -24,16 +25,24 @@
   gap: 1rem;
 }
 
-.footer-nav {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  gap: 0.8rem;
+.footer-col.footer-cta {
+  align-items: center;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  a {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: v.$color-text;
+.footer-col .info-note {
+  max-width: 540px;
+  margin: 0;
+  background-color: v.$color-info-note;
+  border-left: 4px solid v.$color-info-note-border;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 768px) {
+  .footer-col .info-note {
+    max-width: 100%;
   }
 }
 
@@ -41,23 +50,51 @@
   gap: 1rem;
 
   .btn-contact-call,
-  .btn-contact-WhatsApp {
+  .btn-contact-WhatsApp, 
+  .footer-map-btn {
     max-width: 260px;
     width: 100%;
   }
 }
 
 .footer-map {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   margin-top: 0.8rem;
   font-size: 1.5rem;
   font-weight: 700;
   color: v.$color-call;
+  text-decoration: none;
 
   &:hover {
     text-decoration: underline;
   }
 }
+
+.footer-map-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1.1rem 1.4rem;
+  border: 2px solid v.$color-call;
+  border-radius: .8rem;
+  background: color.scale(v.$color-call, $lightness: 40%);
+  color: white;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+    background-color: color.scale(v.$color-call, $lightness: 50%);
+  }
+}
+
 
 .footer-meta {
   display: flex;
@@ -89,4 +126,4 @@
 
 .footer-note {
   margin-top: 0.8rem;
-}
+} 
