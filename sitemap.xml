@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: Podmień BASE_URL na docelową domenę, np. https://example.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://BASE_URL/</loc>
+  </url>
+  <url>
+    <loc>https://BASE_URL/polityka-prywatnosci.html</loc>
+  </url>
+  <url>
+    <loc>https://BASE_URL/blog/pierwsze-dni-z-nowym-zwierzeciem.html</loc>
+  </url>
+  <url>
+    <loc>https://BASE_URL/blog/zakup-zwierzecia-co-sprawdzic.html</loc>
+  </url>
+</urlset>
