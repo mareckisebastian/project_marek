@@ -2,7 +2,7 @@
 
 const nav = document.querySelector("nav");
 // mobile menu toggle
-const menuIcon = document.querySelector(".material-symbols-outlined");
+const menuIcon = document.querySelector(".menu-toggle");
 const menuList = document.querySelector(".lista_menu");
 
 const handleScroll = () => {
@@ -20,6 +20,13 @@ if (nav) {
 
 if (menuIcon && menuList) {
     // rozwijanie i zwijanie menu
+    const closeMenu = () => {
+        menuList.classList.remove("open");
+        menuIcon.classList.remove("active");
+        menuIcon.setAttribute("aria-expanded", "false");
+        menuIcon.focus();
+    };
+
     menuIcon.addEventListener("click", () => {
         menuList.classList.toggle("open");
         menuIcon.classList.toggle("active");
@@ -29,21 +36,22 @@ if (menuIcon && menuList) {
     // zamykanie menu po kliknięciu w link
     document.querySelectorAll(".lista_menu a").forEach(link => {
         link.addEventListener("click", () => {
-            menuList.classList.remove("open");
-            menuIcon.classList.remove("active");
-            menuIcon.setAttribute("aria-expanded", "false");
+            closeMenu();
         });
     });
 
     // reset menu when switching to desktop view
     window.addEventListener("resize", () => {
         if (window.innerWidth >= 1024) {
-            menuList.classList.remove("open");
-            menuIcon.classList.remove("active");
-            menuIcon.setAttribute("aria-expanded", "false");
+            closeMenu();
+        }
+    });
+
+    // zamykanie menu klawiszem Escape
+    window.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && menuList.classList.contains("open")) {
+            closeMenu();
         }
     });
 }
-
-
 

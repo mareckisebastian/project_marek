@@ -772,6 +772,12 @@ article p {
   gap: 1.2rem;
   margin-top: 3rem;
 }
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  .blog-post__pager {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .blog-post__pager {
     grid-template-columns: repeat(2, 1fr);
@@ -799,6 +805,9 @@ article p {
 .blog-post__pager-link--prev {
   text-align: left;
 }
+.blog-post__pager-link--blog {
+  text-align: center;
+}
 @media screen and (min-width: 768px) {
   .blog-post__title {
     font-size: 3.2rem;
@@ -825,12 +834,14 @@ article p {
     justify-self: stretch;
     text-align: center;
     padding: 1.2rem 1.4rem;
+  }
+  .blog-post__pager-link:not(.blog-post__pager-link--blog) {
     font-size: 0;
   }
-  .blog-post__pager-link .pager-text {
+  .blog-post__pager-link:not(.blog-post__pager-link--blog) .pager-text {
     display: none;
   }
-  .blog-post__pager-link::before {
+  .blog-post__pager-link:not(.blog-post__pager-link--blog)::before {
     font-size: 1.6rem;
     font-weight: 700;
     color: #0D0000;
@@ -840,6 +851,16 @@ article p {
   }
   .blog-post__pager-link--next::before {
     content: "Następny →";
+  }
+  .blog-post__pager-link--blog {
+    font-size: 1.6rem;
+  }
+  .blog-post__pager-link--blog .pager-text {
+    display: inline;
+  }
+  .blog-post__pager-link--blog::before {
+    content: none !important;
+    display: none !important;
   }
 }
 .footer {
