@@ -77,6 +77,9 @@ if (mapPlaceholder) {
         iframe.title = "Mapa dojazdu do gabinetu weterynaryjnego w Wojkowicach";
         mapPlaceholder.innerHTML = "";
         mapPlaceholder.appendChild(iframe);
+        if (button) {
+            button.setAttribute("aria-expanded", "true");
+        }
     };
 
     if (button) {
