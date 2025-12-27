@@ -28,9 +28,9 @@ if (menuIcon && menuList) {
     };
 
     menuIcon.addEventListener("click", () => {
-        menuList.classList.toggle("open");
-        menuIcon.classList.toggle("active");
-        menuIcon.setAttribute("aria-expanded", menuList.classList.contains("open"));
+        const isOpen = menuList.classList.toggle("open");
+        menuIcon.classList.toggle("active", isOpen);
+        menuIcon.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
 
     // zamykanie menu po kliknięciu w link
@@ -54,4 +54,3 @@ if (menuIcon && menuList) {
         }
     });
 }
-
