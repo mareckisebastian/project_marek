@@ -186,6 +186,18 @@
     display: none;
   }
 
+  .blog-post__pager-link--blog {
+    font-size: 1.6rem;
+  }
+
+  .blog-post__pager-link--blog .pager-text {
+    display: inline;
+  }
+
+  .blog-post__pager-link--blog::before {
+    content: none;
+  }
+
   .blog-post__pager-link::before {
     font-size: 1.6rem;
     font-weight: 700;
