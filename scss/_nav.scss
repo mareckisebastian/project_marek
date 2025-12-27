@@ -60,6 +60,8 @@
             display: flex;              // menu widoczne na desktopie
             flex-direction: row;
             justify-content: space-evenly;
+            align-items: center;
+            gap: 2rem;
             position: static;           // ważne! usuwa absolutne pozycjonowanie
             background: none;
             padding: 0;
